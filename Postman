@@ -1,0 +1,51 @@
+Para iniciar, abra o git bash, após isso, de os comandos: 1- npm init -y; 2- npm i express nodemon dotenv mysql2 cors multer;
+
+Após instalar as instâncias, teste para ver se o banco e a porta estão conectados: 1- npm start;
+
+CADASTRAR USUÁRIO
+Rota: `"http://localhost:3002/usuarios/cadastrar"`  
+Colocar: `"POST"`  
+No body, colocar: `"{ "nome": "Clari", "email": "clari@gmail.com", "senha": "clari08" }"`
+
+LISTAR USUÁRIOS 
+Rota: `"http://localhost:3002/usuario/listar"`  
+Colocar: `"GET"`  
+No body, deixar vazio.
+
+DELETAR USUÁRIO 
+Rota: `"http://localhost:3002/usuario/deletar/1"`  
+Colocar: `"DELETE"`  
+No body, deixar vazio.
+
+EDITAR USUÁRIO  
+Rota: `"http://localhost:3002/usuario/editar/1"`  
+Colocar: `"PUT"`  
+No body, colocar: `"{ "nome": "Clari Atualizada", "email": "clariatualizada@gmail.com", "senha": "novaSenha08" }"`
+
+LOGIN 
+Rota: `"http://localhost:3002/login"`  
+Colocar: `"POST"`  
+No body, colocar: `"{ "nome": "Clari", "senha": "clari08" }"`
+
+CADASTRAR PRODUTO
+Rota: `"http://localhost:3002/produto/cadastrar"`  
+Colocar: `"POST"`  
+No body, colocar (form-data):  
+- `nome`: `"Produto Exemplo"`  
+- `preco`: `29.99`  
+- `file`: Selecione um arquivo de imagem
+
+LISTAR PRODUTOS
+Rota: `"http://localhost:3002/produtos/listar"`  
+Colocar: `"GET"`  
+No body, deixar vazio.
+
+DELETAR PRODUTO
+Rota: `"http://localhost:3002/produto/deletar/1"`  
+Colocar: `"DELETE"`  
+No body, deixar vazio.
+
+EDITAR PRODUTO
+Rota: `"http://localhost:3002/produto/editar/1"`  
+Colocar: `"PUT"`  
+No body, colocar: `"{ "nome": "Produto Atualizado", "preco": 19.99 }"`
